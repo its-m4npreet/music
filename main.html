@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Dashboard UI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-gray-800 to-gray-900 text-white font-sans h-screen p-4">
+
+  <div class="grid grid-cols-12 gap-4 h-full">
+
+    <!-- Sidebar -->
+    <aside class="col-span-2 bg-gray-900 rounded-xl p-4 flex flex-col">
+      <!-- Icons -->
+      <div class="flex flex-col gap-4 mb-6">
+        <div class="w-6 h-6 bg-gray-700 rounded-full"></div>
+        <div class="w-6 h-6 bg-gray-700 rounded-full"></div>
+        <div class="w-6 h-6 bg-gray-700 rounded-full"></div>
+      </div>
+
+      <!-- Menu -->
+      <div class="mb-4">
+        <div class="text-sm text-gray-400 mb-2">Home</div>
+        <div class="text-sm text-gray-400">My Playlist</div>
+      </div>
+
+      <!-- Recently Played -->
+      <div class="flex-1 overflow-y-auto">
+        <div class="text-sm text-gray-400 mb-2">Recently Played</div>
+        <ul class="space-y-3">
+          <li class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <div class="w-8 h-8 bg-gray-600 rounded-full"></div>
+              <div class="w-20 h-2 bg-gray-700 rounded"></div>
+            </div>
+            <div class="flex gap-2">
+              <div class="w-4 h-4 bg-gray-700 rounded-full"></div>
+              <div class="w-4 h-4 bg-gray-700 rounded-full"></div>
+            </div>
+          </li>
+          <!-- Repeat for other items -->
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="col-span-10 bg-gray-900 rounded-xl p-4 grid grid-rows-[auto_1fr_auto] gap-4">
+
+      <!-- Top Nav -->
+      <div class="flex justify-between items-center">
+        <div class="flex items-center gap-4">
+          <div class="w-6 h-6 bg-gray-700 rounded-full"></div>
+          <div class="w-6 h-6 bg-gray-700 rounded-full"></div>
+        </div>
+        <div class="flex-1 mx-4 h-8 bg-gray-700 rounded"></div>
+        <div class="w-8 h-8 bg-gray-600 rounded-full"></div>
+      </div>
+
+      <!-- Middle Content -->
+      <div class="grid grid-cols-3 gap-4">
+        <!-- Big Player Card -->
+        <div class="col-span-2 bg-gray-800 p-4 rounded-xl">
+          <div class="w-full h-40 bg-gray-700 rounded mb-4"></div>
+          <div class="flex gap-4">
+            <div class="w-1/2 h-8 bg-gray-600 rounded"></div>
+            <div class="w-1/2 h-8 bg-gray-600 rounded"></div>
+          </div>
+        </div>
+
+        <!-- Right Playlist Panel -->
+        <div class="bg-gray-800 p-4 rounded-xl space-y-4">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-gray-700 rounded-full"></div>
+            <div>
+              <div class="w-24 h-3 bg-gray-600 rounded mb-1"></div>
+              <div class="w-16 h-2 bg-gray-700 rounded"></div>
+            </div>
+          </div>
+          <div class="space-y-3">
+            <!-- Song items -->
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-gray-600 rounded-full"></div>
+                <div class="w-20 h-2 bg-gray-700 rounded"></div>
+              </div>
+              <div class="w-4 h-4 bg-gray-700 rounded-full"></div>
+            </div>
+            <!-- Repeat -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Player -->
+      <footer class="bg-gray-800 rounded-xl p-4 flex items-center justify-between">
+        <div class="w-24 h-2 bg-gray-600 rounded"></div>
+        <div class="flex gap-4 items-center">
+          <div class="w-3 h-3 bg-gray-700 rounded-full"></div>
+          <div class="w-3 h-3 bg-gray-700 rounded-full"></div>
+          <div class="w-3 h-3 bg-gray-700 rounded-full"></div>
+          <div class="w-3 h-3 bg-gray-700 rounded-full"></div>
+        </div>
+        <div class="w-24 h-2 bg-gray-600 rounded"></div>
+      </footer>
+
+    </main>
+  </div>
+
+</body>
+</html>
